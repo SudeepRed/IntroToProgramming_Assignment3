@@ -80,11 +80,11 @@ correct = len(test_cases) - wrong
 print("\nCorrect:\t{}\nIncorrect:\t{}".format(correct, wrong))
 marks = 0
 if wrong == 0:
-    marks = 3
-elif correct/(correct + wrong) >= 0.75:
     marks = 2
+elif correct/(correct + wrong) >= 0.75:
+    marks = 1
 
-print("* Section 1: {}/3".format(marks))
+print("* Section 1: {}/2".format(marks))
 
 assert count > 0
 avg_time_approach1 = avg_time_approach1/count
